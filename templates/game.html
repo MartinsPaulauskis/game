@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ texts['game_title'] }}</title>
+</head>
+<body>
+    <h1>{{ texts['game'] }}</h1>
+    <p>{{ texts['health'] }}: {{ health }}</p>
+    <p>{{ texts['battle_points'] }}: {{ battle_points }}</p>
+    <form method="POST">
+        <button name="action" value="fight">{{ texts['fight'] }}</button>
+        <button name="action" value="flee">{{ texts['flee'] }}</button>
+    </form>
+</body>
+</html>

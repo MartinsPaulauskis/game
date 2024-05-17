@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ texts['my_games_title'] }}</title>
+</head>
+<body>
+    <h1>{{ texts['my_games'] }}</h1>
+    <ul>
+        {% for game in games %}
+            <li>{{ texts['game_id'] }}: {{ game[0] }}, {{ texts['xp_earned'] }}: {{ game[1] }}, {{ texts['result'] }}: {{ game[2] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('dashboard') }}">{{ texts['back_to_dashboard'] }}</a>
+</body>
+</html>

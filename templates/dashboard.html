@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ texts['dashboard_title'] }}</title>
+</head>
+<body>
+    <h1>{{ texts['dashboard'] }}</h1>
+    <p>{{ texts['username'] }}: {{ user[0] }}</p>
+    <p>{{ texts['level'] }}: {{ user[1] }}</p>
+    <p>{{ texts['xp'] }}: {{ user[2] }}</p>
+    <p>{{ texts['games_played'] }}: {{ user[3] }}</p>
+    <p>{{ texts['xp_to_next_level'] }}: {{ xp_to_next_level }}</p>
+    <a href="{{ url_for('start_game') }}">{{ texts['start_game'] }}</a>
+    <a href="{{ url_for('games') }}">{{ texts['my_games'] }}</a>
+    <a href="{{ url_for('logout') }}">{{ texts['logout'] }}</a>
+</body>
+</html>
